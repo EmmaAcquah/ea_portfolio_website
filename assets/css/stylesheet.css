@@ -26,7 +26,7 @@ Variables
 
 
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    /* --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
     /* Positioning / Sizing */
     --header-spacing: 0.99rem;
@@ -239,7 +239,7 @@ nav {
     justify-content: space-between;
 }
 
-/* Hamburger menu - For narrower browser width */
+/* Hamburger Menu - For narrower browser width */
 .nav-toggle {
     font-size: 1.5rem;
     color: var(--clr-grey-1);
@@ -405,3 +405,24 @@ margin-bottom: 1.25rem;
     padding: 0.3rem 0;
 }
 
+/* Skills Section */
+
+.skills-wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.icon {
+    width: 11.875rem; 
+    height: 11.25rem;
+}
+
+.icon-card {
+    background-color: var(--clr-white);
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--clr-grey-5);
+    padding: 20px;
+    margin: 10px;
+}
