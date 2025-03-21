@@ -359,7 +359,6 @@ margin-bottom: 1.25rem;
     }
 }
 
-
 .contact-button {
     text-transform: none;
     color: var(--clr-white);
@@ -374,3 +373,35 @@ margin-bottom: 1.25rem;
   color: var(--clr-accent);
 }
   
+/* About Section */
+
+.profile {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+.profile-img {
+    max-width:15%;
+    height:auto;
+    border-radius: 50%;
+}
+
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+}
+
+.bio ul {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+
