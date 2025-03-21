@@ -136,7 +136,7 @@ p {
     }
 }
 
-/*  global classes */
+/*  Global classes */
 
 .btn {
     text-transform: uppercase;
@@ -159,10 +159,48 @@ p {
 }
 
 
+/*
+=============== 
+Global Section Styling
+===============
+*/
+
+.section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+    .section-center {
+    width: 95vw;
+    }
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.title h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title span {
+    color: var(--clr-accent);
+} 
+
 
 /*
 =============== 
-Section Specific Adjustments
+Component Specific Adjustments
 ===============
 */
 
