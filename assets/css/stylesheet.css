@@ -13,7 +13,7 @@ Variables
 
 :root {
     /* Fonts*/
-    /* --font-family-header: "Roboto", sans-serif; */
+    --font-family-header: "Roboto", sans-serif;
     --font-family-body: "Open Sans", sans-serif;
 
     /* Colours */
@@ -38,6 +38,7 @@ Variables
     --spacing: 0.25rem;
     --line-height: 1.7rem;
     --bottom-margin:  0.5rem;
+    --radius: 0.5rem;
 
     /* Animation / Effects */
     --transition: all 0.3s linear;
@@ -274,7 +275,7 @@ nav {
 
 .links a {
     background: var(--clr-white);
-    color: var(--clr-grey-5);
+    color: var(--clr-grey-1);
     font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
@@ -285,7 +286,7 @@ nav {
 }
 
 .links a:hover {
-    color: var(--clr-grey-1);
+    color: var(--clr-accent);
 }
 
 /* Larger browser width adjustments */
@@ -335,8 +336,10 @@ nav {
 /* Banner/Hero Section */
 header {
     min-height: 100vh;
-    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-      url(./hero-bcg.jpeg) center/cover no-repeat;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7));
+    /* To-Do: Add background image */
+    /* , url(/assets/images/hero-bcg.jpeg) center/cover no-repeat; */
+      /* url(/assets/images/ea_logo.png) center/cover no-repeat; */
 }
 
 .banner {
@@ -507,7 +510,7 @@ footer p {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
-    background: var(--clr-secondary);
+    background: var(--clr-accent);
     width: 2rem;
     height: 2rem;
     display: grid;
@@ -517,6 +520,10 @@ footer p {
     animation: bounce 2s ease-in-out infinite;
     visibility: hidden;
     z-index: -100;
+}
+
+.top-link:hover {
+    cursor: pointer;
 }
 
 .show-link {
